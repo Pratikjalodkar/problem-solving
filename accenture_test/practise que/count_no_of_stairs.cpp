@@ -1,5 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+int test(int n,int m){
+	return (n/m)+(n%m);
+}
+
 int main()
 {
 	int n;
@@ -7,14 +12,7 @@ int main()
 	cin>>n;
 	cin>>m;
 	
-	int c=0;
-	int i=0;
-	while(i<n){
-		i+=m;
-		c++;
-	}
-	c=n-i;
-	cout<<c;
+	cout<<test(n,m);
 	return 0;
 }
 
